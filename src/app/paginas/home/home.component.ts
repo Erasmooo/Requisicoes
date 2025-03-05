@@ -20,7 +20,7 @@ export class HomeComponent implements AfterViewInit {
     if (isPlatformBrowser(this.platformId)) {
       setTimeout(() => {
         const dropdowns = document.querySelectorAll('.dropdown-toggle');
-        console.log('Dropdowns encontrados:', dropdowns); // 🔴 Verifica se os elementos existem no DOM
+        console.log('Dropdowns encontrdos:', dropdowns); // 🔴 Verifica se os elementos existem no DOM
   
         dropdowns.forEach((dropdown) => {
           new bootstrap.Dropdown(dropdown);
