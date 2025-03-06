@@ -4,17 +4,15 @@ import { DashboardComponent } from './paginas/dashboard/dashboard.component';
 import { InventarioComponent } from './paginas/inventario/inventario.component';
 import { RequisicoesComponent } from './paginas/requisicoes/requisicoes.component';
 import { VerEstadoComponent } from './paginas/ver-estado/ver-estado.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
-  {
-    path: 'home', component: HomeComponent, children: [ 
+      { path: '', component: AppComponent },
+      { path: 'home', component: HomeComponent },
       { path: 'dashboard', component: DashboardComponent },
       { path: 'inventario', component: InventarioComponent },
       { path: 'requisicoes', component: RequisicoesComponent },
-      { path: 'ver-estado', component: VerEstadoComponent },
-    ]
-  },
-  { path: '', redirectTo: 'home', pathMatch: 'full' } 
+      { path: 'ver-estado', component: VerEstadoComponent }
 ];
 
 
